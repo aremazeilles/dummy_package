@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package author="Anthony Remazeilles" author_email="anthony.remaeilles@gmail.com" copyright="Tecnalia" description="Dummy node implementation" license="beerware" name="dummy_package" template="cpp_node_update">
+  <component frequency="20" name="dummy_node">
+    <publisher description="my_pub" name="my_pub" type="std_msgs::Bool"/>
+    <subscriber description="my_sub" name="my_sub" type="std_msgs::Float32"/>
+    <directPublisher description="my_direct_pub" name="my_direct_pub" type="std_msgs::Bool"/>
+    <dynParameter description="my_dyn_param" name="my_dyn_param" type="std::string" value="SuperString"/>
+    <actionServer description="complexaction" name="my_action" type="actionlib::Test"/>
+    <directSubscriber description="my_direct_sub" name="my_direct_sub" type="std_msgs::String"/>
+    <broadcaster description="my_broadcast" name="broadcast"/>
+    <parameter description="my_static_param" name="my_static_param" type="std::string" value="staticvalue"/>
+    <serviceServer description="my_service" name="my_service" type="std_srvs::SetBool"/>
+  </component>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>actionlib</depend>
+  <depend>actionlib_msgs</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>tf</depend>
+</package>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>dummy_package</name>
+  <description>Dummy node implementation</description>
+  <version>0.0.0</version>
+  <maintainer email="anthony.remaeilles@gmail.com">Anthony Remazeilles</maintainer>
+  <author email="anthony.remaeilles@gmail.com">Anthony Remazeilles</author>
+  <license>beerware</license>
+  <url></url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- user dependencies -->
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>actionlib</depend>
+  <depend>actionlib_msgs</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>tf</depend>
+  <test_depend>rostest</test_depend>
+  <!-- protected region additional package statements begin -->
+  <!-- protected region additional package statements end -->
+</package>

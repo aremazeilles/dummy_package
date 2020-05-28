@@ -1,0 +1,11 @@
+<launch>
+    <node name="dummy_node" pkg="dummy_package" type="dummy_node" />
+    <!-- protected region dummy_node my_pub additional configuration begin -->
+    <!-- protected region dummy_node my_pub additional configuration end -->
+    <test test-name="hz_loop_test_dummy_node_my_pub" pkg="rostest" type="hztest" name="hz_test_dummy_node_my_pub">
+        <param name="topic" value="my_pub" />
+        <param name="hz" value="20" />
+        <param name="hzerror" value="0.5" />
+        <param name="test_duration" value="5.0" />
+    </test>
+</launch>
